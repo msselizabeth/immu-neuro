@@ -1,0 +1,8 @@
+.image {
+    width: 21.875rem;
+    height: 25rem;
+    object-fit: cover;
+}
+.about{
+    background-color: linear-gradient(to right, #F3F7FF 0%, #DEEEFE 100%);
+}
