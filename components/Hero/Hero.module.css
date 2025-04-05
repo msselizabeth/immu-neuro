@@ -1,0 +1,33 @@
+.hero::after, .hero::before {
+     content: '';
+     position: absolute;
+     background-size: cover;
+}
+.hero::before{
+    top: 4rem;
+    left: 0;
+    width: 7rem;
+    height: 6rem;
+    background-image: url("/dots.png");
+}
+.hero::after{
+    top: 2rem;
+    right: 2rem;
+    background-image: url("/hero-image.png");
+    width: 38rem;
+    height: 32.75rem;
+}
+.nav {
+    box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/check-icon.svg');
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+}
