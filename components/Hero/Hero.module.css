@@ -1,23 +1,41 @@
-.hero::after, .hero::before {
-     content: '';
-     position: absolute;
-     background-size: cover;
+.hero::after,
+.hero::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
-.hero::before{
-    top: 4rem;
+
+.hero::before {
+    top: 1rem;
     left: 0;
-    width: 7rem;
-    height: 6rem;
+    width: 3.75rem;
+    height: 2.5rem;
     background-image: url("/dots.png");
 }
-.hero::after{
-    top: 2rem;
-    right: 2rem;
-    background-image: url("/hero-image.png");
-    width: 38rem;
-    height: 32.75rem;
+
+@media screen and (min-width:1280px) {
+    .hero::before {
+        top: 4rem;
+        left: 0;
+        width: 7rem;
+        height: 6rem;
+        ;
+    }
+    .hero::after {
+        top: 2rem;
+        right: 2rem;
+        background-image: url("/hero-image.png");
+        width: 38rem;
+        height: 32.75rem;
+        z-index: -10;
+    }
 }
-.nav {
+
+
+
+.list_container {
     box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
 }
 
@@ -28,6 +46,13 @@
     left: 0;
     background-image: url('/check-icon.svg');
     background-size: cover;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (min-width:1280px) {
+    .item::before {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
