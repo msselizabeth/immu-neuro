@@ -1,0 +1,9 @@
+.contacts {
+    background-image: url('/spot-v.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form{
+    box-shadow: 0 0 14 8 rgba(229, 233, 246, 0.85);
+}
