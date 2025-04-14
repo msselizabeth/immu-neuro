@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import MobliMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
   return (
-    <header className="p-3 md:p-4 xl:p-5">
-      <div className="md:w-3xl xl:w-7xl m-auto flex justify-between items-center">
+    <header className="p-5 md:p-4 xl:p-5">
+      <div className=" xl:w-7xl m-auto flex justify-between items-center">
         <Link href="/">
           <Image
             src="/immu-neuro-logo.png"
@@ -15,8 +16,9 @@ export default function Header() {
             className={styles.logo}
           />
         </Link>
-        <nav>
-          <ul className="flex gap-15 lg:text-lg">
+        <MobliMenu />
+        <nav className="hidden md:block">
+          <ul className="flex gap-8 xl:gap-15 xl:text-lg">
             <li>
               <Link href="/" className="font-bold hover:text-primary">Головна</Link>
             </li>

@@ -1,8 +1,8 @@
 .logo {
-    width: 12rem;
+    width: 15.5rem;
     height: auto;
 
     @media screen and (min-width:1280px) {
-        width: 18rem;
+        width: 20rem;
     }
 }
