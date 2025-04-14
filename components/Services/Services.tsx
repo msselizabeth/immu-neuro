@@ -5,7 +5,7 @@ import { services } from "@/data/services";
 export default function Services() {
   return (
     <section
-      className={`${styles.services} relative w-full max-w-[100rem] m-auto pt-15 pb-15`}>
+      className={`${styles.services} relative w-full max-w-[100rem] m-auto pt-15 pb-15 `} id="services">
       
       <div className={`md:w-3xl xl:w-7xl m-auto`}>
       <h2 className="font-extrabold text-3xl text-center">Послуги</h2>

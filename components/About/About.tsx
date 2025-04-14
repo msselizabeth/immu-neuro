@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <section className="w-full max-w-[100rem] m-auto pt-15 pb-15">
+    <section className="w-full max-w-[100rem] m-auto pt-15 pb-15" id="about">
       <div className={` md:w-3xl xl:w-7xl m-auto md:flex md:gap-5 bg-linear-to-r from-[#DEEEFE] to-[#F3F7FF] rounded-2xl`}>
         <Image
           src="/doctor.jpg"
