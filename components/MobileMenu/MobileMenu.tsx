@@ -21,7 +21,7 @@ const MobileMenu = () => {
 
       <div
         className={`absolute top-0 right-0 h-dvh w-full bg-slate-50 z-101 flex items-center p-5 transition-all duration-500 ${
-          isOpen ? "opacity-100 right-0" : "opacity-0 right-[-100%]"
+          isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-[100%]"
         } `}>
         <nav className="w-full flex justify-center">
           <ul className="flex flex-col gap-12 justify-center items-center">

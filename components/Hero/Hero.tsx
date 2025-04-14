@@ -3,7 +3,7 @@ import styles from "./Hero.module.css"
 export default function Hero() {
   return (
     <section className={`${styles.hero} relative pl-4 pr-4 pt-7 pb-7 w-full max-w-[100rem] m-auto xo:pt-15 xl:pb-15`}>
-      <div className="md:w-3xl xl:w-7xl m-auto">
+      <div className="w-full xl:w-7xl m-auto">
         <h1 className="text-[1.2rem] md:text-[1.45rem] xl:text-[2.1rem] xl:leading-[3.25rem] md:max-w-[650px] xl:max-w-[770px] pl-10 md:pl-12 xl:pl-21">
           <span className="text-[#458FF6] font-extrabold">
             <span className="text-[#97C3F9]">Імму</span>Нейро

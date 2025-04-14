@@ -3,12 +3,16 @@ import styles from "./Contacts.module.css";
 
 export default function Contacts() {
   return (
-    <section className="w-full max-w-[100rem] m-auto pt-15 pb-15" id="contacts">
-      <div className="md:w-3xl xl:w-7xl m-auto ">
-        <h2 className="font-extrabold text-3xl">Контактна інформація</h2>
+    <section
+      className="pl-4 pr-4 pt-7 pb-7 w-full max-w-[100rem] m-auto xl:pt-15 xl:pb-15"
+      id="contacts">
+      <div className="w-full xl:w-7xl m-auto ">
+        <h2 className="font-extrabold text-2xl xl:text-3xl md:pl-3">
+          Контактна інформація
+        </h2>
         <div className="xl:flex">
           <div
-            className={`${styles.contacts} w-[50%] p-25 flex flex-col gap-4 mt-15`}>
+            className={`${styles.contacts} p-10 md:p-14 xl:p-25 md:w-[70%] flex flex-col m-auto gap-4.5 mt-4 xl:mt-15 text-sm md:text-base`}>
             <p className="font-bold">Адреса: м.Одеса, вул. Успенська 34</p>
             <p>
               Години прийому:
@@ -21,12 +25,10 @@ export default function Contacts() {
               Для запису на приойом:
               <span className="block font-bold">+38(063)-490-30-54</span>
             </p>
-            <p>
-              або заповніть форму нижче та лікар самостійно з вами звʼяжеться.
-            </p>
-                  </div>
-                  
-              <ContactForm />
+            <p>або заповніть форму та лікар самостійно з вами звʼяжеться.</p>
+          </div>
+
+          <ContactForm />
         </div>
       </div>
     </section>

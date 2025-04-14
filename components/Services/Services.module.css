@@ -1,32 +1,42 @@
-.services::after,
-.services::before {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 46rem;
-    height: 30rem;
-}
-
-.services::before {
-    background-image: url('/spot.svg');
-    top: 5rem;
-    left: -10rem;
-}
-
-.services::after {
-    background-image: url('/spot-v.svg');
-    bottom: 0;
-    right: -10rem;
-}
-
 .item {
     box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
+    @media screen and (min-width:768px) {
+        width: calc(100%/2 - 1.3rem);
+    }
     @media screen and (min-width:1280px) {
         width: calc(100%/3 - 1.75rem);
     }
 }
 
-.icon{
-    width: 4.375rem;
+.icon {
+    width: 3.375rem;
+    height:3.375rem;
+    @media screen and (min-width:1280px) {
+        width: 4.375rem;
     height: 4.375rem;
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .services::after,
+    .services::before {
+        content: '';
+        position: absolute;
+        background-size: cover;
+        width: 46rem;
+        height: 30rem;
+    }
+
+    .services::before {
+        background-image: url('/spot.svg');
+        top: 5rem;
+        left: 0rem;
+    }
+
+    .services::after {
+        background-image: url('/spot-v.svg');
+        bottom: 0;
+        right: 0rem;
+    }
 }

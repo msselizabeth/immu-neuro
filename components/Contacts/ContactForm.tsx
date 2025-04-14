@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className={`${styles.form} max-w-md mx-auto p-6 rounded-3xl flex flex-col gap-4`}>
+      className={`${styles.form} md:w-[60%] xl:w-[50%] m-auto p-6 rounded-3xl flex flex-col gap-4 mt-10`}>
       <h2 className="text-xl font-semibold text-[#458FF6]">
         Заповніть цю форму та лікар з вами сам зв’яжеться
       </h2>

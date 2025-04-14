@@ -3,8 +3,9 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <section className="w-full max-w-[100rem] m-auto pt-15 pb-15" id="about">
-      <div className={` md:w-3xl xl:w-7xl m-auto md:flex md:gap-5 bg-linear-to-r from-[#DEEEFE] to-[#F3F7FF] rounded-2xl`}>
+    <section className="pl-4 pr-4 pt-7 pb-7 w-full max-w-[100rem] m-auto xo:pt-15 xl:pb-15" id="about">
+      <h2 className="font-extrabold text-2xl xl:text-3xl text-center">Про лікаря</h2>
+      <div className={`mt-10 w-full xl:w-7xl m-auto md:flex md:gap-5 bg-linear-to-r from-[#DEEEFE] to-[#F3F7FF] rounded-2xl`}>
         <Image
           src="/doctor.jpg"
           alt="Гуслистий Артур Анатолійович"
@@ -12,10 +13,10 @@ export default function About() {
           height={400}
           className={`${styles.image} rounded-2xl`}
         />
-        <div className="w-[70%] p-5">
+        <div className="xl:w-[70%] p-4 md:pr-5 xl:p-5">
           <input type="checkbox" id="toggle" className="peer hidden" />
-          <h2 className="font-extrabold text-3xl">Про лікаря</h2>
-          <div className="max-h-[16rem] inline-block overflow-hidden peer-checked:max-h-[50rem] transition-all duration-300 text-slate-400 mt-5">
+          
+          <div className="max-h-[15rem] md:max-h-[17rem] xl:max-h-[16rem] inline-block overflow-hidden peer-checked:max-h-[50rem] transition-all duration-300 text-slate-500 md:mt-8">
             <p>
               Гуслистий Артур Анатолійович – лікар-невролог з 18-ти річним
               стажем роботи. Має широкий досвід у діагностиці, лікуванні та
