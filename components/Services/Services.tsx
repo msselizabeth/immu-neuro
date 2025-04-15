@@ -14,7 +14,7 @@ export default function Services() {
             return (
               <li
                 key={index}
-                className={`${styles.item} relative p-7 z-100 bg-white rounded-3xl `}>
+                className={`${styles.item} my-shadow relative p-7 z-100 bg-white rounded-3xl `}>
                 <div className="flex gap-2 items-center">
                   <Image
                     src={item.img}

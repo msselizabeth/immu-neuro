@@ -11,7 +11,7 @@ export default function Hero() {
           {` - кваліфікована допомога від досвідченого невролога.`}
         </h1>
 
-        <div className={`${styles.list_container} mt-4 md:ml-10 xl:ml-21 xl:mt-10 md:max-w-[430px] xl:max-w-[650px] rounded-3xl `}>
+        <div className={`my-shadow mt-4 md:ml-10 xl:ml-21 xl:mt-10 md:max-w-[430px] xl:max-w-[650px] rounded-3xl `}>
           <ul className="p-4 md:p-5 xl:p-8 flex flex-col gap-5">
             <li className={`${styles.item} relative pl-[2rem] md:pl-[2.15rem] xl:pl-[3rem]`}>
               <h2 className="text-sm md:text-[15px] font-bold xl:text-xl">Системний підхід до встановлення діагнозу</h2>

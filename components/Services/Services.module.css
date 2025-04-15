@@ -1,5 +1,4 @@
 .item {
-    box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
     @media screen and (min-width:768px) {
         width: calc(100%/2 - 1.3rem);
     }

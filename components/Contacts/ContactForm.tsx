@@ -94,14 +94,14 @@ export default function ContactForm() {
   return (
     <div className="md:w-[60%] xl:w-[50%] m-auto">
       {isSubmitted ? (
-        <div className={`${styles.form} text-center p-8 text-lg text-[#458FF6] rounded-3xl flex flex-col gap-4 mt-10`}>
+        <div className={`text-center p-8 text-lg text-[#458FF6] rounded-3xl flex flex-col gap-4 mt-10`}>
           Дякуємо! Ваш запит прийнято. Очікуйте зв’язку з лікарем протягом 2
           годин.
         </div>
       ) : (
         <form
           onSubmit={handleSubmit}
-          className={`${styles.form} p-6 rounded-3xl flex flex-col gap-4 mt-10`}>
+          className={`my-shadow p-6 rounded-3xl flex flex-col gap-4 mt-10`}>
           <h2 className="text-xl font-semibold text-[#458FF6]">
             Заповніть цю форму та лікар з вами сам зв’яжеться
           </h2>

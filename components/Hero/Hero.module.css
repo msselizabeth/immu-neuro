@@ -47,9 +47,9 @@
 
 
 
-.list_container {
+/* .list_container {
     box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
-}
+} */
 
 .item::before {
     content: '';

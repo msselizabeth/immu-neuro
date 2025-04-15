@@ -11,3 +11,9 @@ body {
   font-family: var(--font-mulish), Arial, Helvetica, sans-serif;
   
 }
+
+.my-shadow {
+  box-shadow: -10 10 15 rgba(229, 233, 246, 0.85);
+}
+
+
