@@ -140,7 +140,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder="Ім’я та Прізвище"
-            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-sm"
+            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-base"
           />
 
           <IMaskInput
@@ -157,7 +157,7 @@ export default function ContactForm() {
             }}
             inputMode="tel"
             placeholder="+38(099)-999-99-99"
-            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-sm"
+            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-base"
             required
           />
           <input
@@ -166,7 +166,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Ваш email"
-            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-sm"
+            className="w-full p-3 border border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none rounded-3xl text-base"
           />
 
           <input
@@ -175,7 +175,7 @@ export default function ContactForm() {
             onChange={handleChange}
             type="text"
             placeholder="Коментар"
-            className="w-full p-3 border rounded-3xl border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none text-sm resize-none"
+            className="w-full p-3 border rounded-3xl border-[#97C3F9] active:border-[#BA68C8] focus:border-[#BA68C8] outline-none text-base resize-none"
           />
           {errorMessage && (
             <p className="text-red-500 text-sm">{errorMessage}</p>
