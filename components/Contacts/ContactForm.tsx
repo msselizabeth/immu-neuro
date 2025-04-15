@@ -11,11 +11,21 @@ interface FormData {
   comment: string;
 }
 
-const {
-  NEXT_PUBLIC_SERVICE_ID,
-  NEXT_PUBLIC_TEMPLATE_ID,
-  NEXT_PUBLIC_PUBLIC_KEY,
-} = process.env;
+// const {
+//   NEXT_PUBLIC_SERVICE_ID,
+//   NEXT_PUBLIC_TEMPLATE_ID,
+//   NEXT_PUBLIC_PUBLIC_KEY,
+// } = process.env;
+
+// if (
+//   !NEXT_PUBLIC_PUBLIC_KEY ||
+//   !NEXT_PUBLIC_SERVICE_ID ||
+//   !NEXT_PUBLIC_TEMPLATE_ID
+// ) {
+//   alert(
+//     "Щось пішло не так. Спробуйте перезавантажити сторінку та повторити спробу."
+//   );
+// }
 
 export default function ContactForm() {
   const [consultationType, setConsultationType] = useState("Онлайн");
@@ -41,16 +51,7 @@ export default function ContactForm() {
       return;
     }
 
-    if (
-      !NEXT_PUBLIC_PUBLIC_KEY ||
-      !NEXT_PUBLIC_SERVICE_ID ||
-      !NEXT_PUBLIC_TEMPLATE_ID
-    ) {
-      alert(
-        "Щось пішло не так. Спробуйте перезавантажити сторінку та повторити спробу."
-      );
-      return;
-    }
+  
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID || "",
